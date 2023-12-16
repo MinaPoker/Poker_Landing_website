@@ -27,8 +27,9 @@ const About = () => (
         blockchain technology
         </span>{' '}
         {' '}
-        <span className="font-extrabold text-white"></span> to create a decentralized, transparent, and secure environment for poker enthusiasts worldwide. Let's{' '}
-        <span className="font-extrabold text-white">explore</span>  by scrolling down
+        <span className="font-extrabold text-white"></span> to create a decentralized, transparent, and secure environment for poker enthusiasts worldwide. 
+        Let's{' '}
+        <span className="font-extrabold text-white">Zero-knowledge proofs</span>  enable the platform to verify transactions and interactions without disclosing any sensitive information, enhancing privacy and security for users.
       </motion.p>
 
       <motion.img
