@@ -1,6 +1,9 @@
 import Hero from "./Hero";
-impo
+import Explore from "./Explore";
+import About from "./About";
 export {
     Hero,
+    About,
+    Explore,
 
 }
