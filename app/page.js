@@ -17,6 +17,10 @@ export default function Home() {
     <div className='relative'>
     <GetStarted />
     </div>
+
+    <div className='relative'>
+    <Insights />
+    </div>
       <About />
     </main>
   )
