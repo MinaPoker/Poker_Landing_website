@@ -3,7 +3,7 @@ import About from '@/sections/About'
 import Hero from '@/sections/Hero'
 import Image from 'next/image'
 import Explore from "@/sections/Explore"
-import NewFeatures from '@/components/NewFeatures'
+
 
 export default function Home() {
   return (
@@ -18,7 +18,7 @@ export default function Home() {
     <div className='relative'>
     <GetStarted />
       <div className='relative'>
-        <NewFeatures />
+
       </div>
     </div>
 
