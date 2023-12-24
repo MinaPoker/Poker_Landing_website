@@ -1,9 +1,8 @@
 import Navbar from '@/components/Navbar'
 import About from '@/sections/About'
 import Hero from '@/sections/Hero'
-import Image from 'next/image'
 import Explore from "@/sections/Explore"
-
+import { Roadmap } from '@/sections/Index'
 
 export default function Home() {
   return (
@@ -18,7 +17,7 @@ export default function Home() {
     <div className='relative'>
     <GetStarted />
       <div className='relative'>
-
+        <Roadmap />
       </div>
     </div>
 
