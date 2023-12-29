@@ -86,3 +86,41 @@ export const socials = [
     url: '/facebook.svg',
   },
 ];
+const experiences = [
+  {
+    title: "1st Month",
+    icon: " ",
+    iconBg: "#383E56",
+    date: "October 2023 - Novermber 2023",
+    points: [
+      "Developed MVP prototype"
+    ],
+  },
+  {
+    title: "2st Month",
+    icon: " ",
+    iconBg: "#383E56",
+    date: "November 2023 - December 2023",
+    points: [
+      "Enhanced components and Added Zk-features in smart-contracts"
+    ],
+  },
+  {
+    title: "3rd Month",
+    icon: " ",
+    iconBg: "#383E56",
+    date: "December 2023 - January 2024",
+    points: [
+      "Developed Landing Website"
+    ],
+  },
+  {
+    title: "4th Month",
+    icon: " ",
+    iconBg: "#383E56",
+    date: "January 2024 - Febuary 2024",
+    points: [
+      "Integrating chatbot and Adding multiplayer support"
+    ],
+  },
+];
