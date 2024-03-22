@@ -2,7 +2,7 @@
 // Also, assuming this code is part of a React component.
 
 // Import necessary dependencies from React and framer-motion library
-'use strict';
+'use client';
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 
