@@ -5,7 +5,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
   title: 'MinaPoker',
-  description: 'Mina Poker Landing Website',
+  description: 'Mina Poker Website',
 }
 
 export default function RootLayout({ children }) {

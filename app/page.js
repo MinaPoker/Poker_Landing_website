@@ -5,9 +5,9 @@ import Explore from "@/sections/Explore"
 import { Roadmap } from '@/sections/Index'
 import GetStarted from '@/sections/GetStarted'
 import World from '@/sections/World'
-// import Insights from '@/sections/Insights'
+import Insights from '@/sections/Insights'
 import Feedback from '@/sections/Feedback'
-// import Footer from '@/sections/Footer'
+import Footer from '@/sections/Footer'
 
 export default function Home() {
   return (
