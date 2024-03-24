@@ -86,7 +86,7 @@ export const socials = [
     url: '/facebook.svg',
   },
 ];
-const experiences = [
+export const experiences = [
   {
     title: "1st Month",
     icon: " ",
