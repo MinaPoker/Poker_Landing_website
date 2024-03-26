@@ -1,4 +1,5 @@
-import React from "react";
+'use client';
+
 import {
     VerticalTimeline,
     VerticalTimelineElement,
@@ -6,29 +7,28 @@ import {
 import { motion } from "framer-motion";
 import { TitleText, TypingText } from '../components';
 import "react-vertical-timeline-component/style.min.css";
-
-
 import { experiences } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { textVariant } from "../utils/motion";
 
 const RoadmapCard = ({ experiences }) => {
     return (
+        experiences &&
         <VerticalTimelineElement
             contentStyle={{
                 background: "#1d1836",
                 color: "#fff",
             }}
             contentArrowStyle={{ borderRight: "7px solid  #232631" }}
-            date={experiences.date}
-            iconStyle={{ background: experiences.iconBg }}
+            date={experiences && experiences.date}
+            iconStyle={{ background: experiences && experiences.iconBg }}
             icon={
                 <div className='flex justify-center items-center w-full h-full'>
-                    <img
+                    {/* <img
                         src={experience.icon}
                         alt={experiences.company_name}
                         className='w-[60%] h-[60%] object-contain'
-                    />
+                    /> */}
                 </div>
             }
         >

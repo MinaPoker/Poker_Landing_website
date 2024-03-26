@@ -7,7 +7,7 @@ import GetStarted from '@/sections/GetStarted'
 import World from '@/sections/World'
 import Insights from '@/sections/Insights'
 import Feedback from '@/sections/Feedback'
-import Footer from '@/components'
+import Footer from '@/components/Footer'
 import Experience from '@/sections/Experience'
 
 export default function Home() {

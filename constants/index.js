@@ -91,7 +91,7 @@ export const experiences = [
     title: "1st Month",
     icon: " ",
     iconBg: "#383E56",
-    date: "October 2023 - Novermber 2023",
+    date: "October 2023 - November 2023",
     points: [
       "Developed MVP prototype"
     ],
