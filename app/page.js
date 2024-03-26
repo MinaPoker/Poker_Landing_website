@@ -7,7 +7,7 @@ import GetStarted from '@/sections/GetStarted'
 import World from '@/sections/World'
 import Insights from '@/sections/Insights'
 import Feedback from '@/sections/Feedback'
-import Footer from '@/sections/Footer'
+import Footer from '@/components'
 
 export default function Home() {
   return (
@@ -23,15 +23,15 @@ export default function Home() {
         <div className="relative">
           <GetStarted />
           <div className="gradient-04 z-0" />
-          {/* <Experience /> */}
+          <Experience />
         </div>
         <World />
         <div className="relative">
-          {/* <Insights /> */}
+          <Insights />
           <div className="gradient-04 z-0" />
           <Feedback />
         </div>
-        {/* <Footer /> */}
+        <Footer />
       </div>
     </main>
   )
