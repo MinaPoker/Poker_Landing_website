@@ -8,6 +8,7 @@ import World from '@/sections/World'
 import Insights from '@/sections/Insights'
 import Feedback from '@/sections/Feedback'
 import Footer from '@/components'
+import Experience from '@/sections/Experience'
 
 export default function Home() {
   return (
