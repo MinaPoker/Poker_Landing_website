@@ -7,6 +7,7 @@ import { CheckIcon, XMarkIcon } from "@heroicons/react/24/solid";
 import { newsletterData } from "../lib/databaseFunctions";
 import { gsap } from "gsap";
 
+
 function NewsletterForm() {
   const [input, setInput] = useState("");
   const [successMessage, setSuccessMessage] = useState(null);
