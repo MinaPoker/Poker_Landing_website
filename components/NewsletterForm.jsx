@@ -4,6 +4,7 @@ import { getPlaneKeyframes } from "../lib/getPlaneKeyframes";
 import { getTrailsKeyframes } from "../lib/getTrailsKeyframes";
 import { EnvelopeIcon } from "@heroicons/react/24/outline";
 import { CheckIcon, XMarkIcon } from "@heroicons/react/24/solid";
+import { newsletterData } from "../lib/databaseFunctions";
 import { gsap } from "gsap";
 
 function NewsletterForm() {
@@ -31,19 +32,9 @@ function NewsletterForm() {
 
       to(button, { keyframes: getTrailsKeyframes(button) });
     }
-
-    const res = await fetch("/api/addSubscription", {
-      body: JSON.stringify({ email }),
-      headers: { "Content-Type": "application/json" },
-      method: "POST",
-    });
-    const data = await res.json();
-
-    if (data.error) {
-      setErrorMessage("Hey, you are already subscribed!");
-      setSuccessMessage(null);
-      return;
-    }
+    const address = "398257knew091u30u4514"
+    newsletterData(email, address);
+    console.log("email", email, "address", address);
 
     setSuccessMessage(data.res);
     setErrorMessage("");
@@ -72,9 +63,8 @@ function NewsletterForm() {
           />
           <button
             ref={buttonRef}
-            className={`${
-              active && "active"
-            } disabled:!bg-[#17141F] disabled:grayscale-[65%] disabled:opacity-50 disabled:cursor-not-allowed text-sm md:text-base`}
+            className={`${active && "active"
+              } disabled:!bg-[#17141F] disabled:grayscale-[65%] disabled:opacity-50 disabled:cursor-not-allowed text-sm md:text-base`}
             disabled={!input}
             type="submit"
           >
