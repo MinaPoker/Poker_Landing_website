@@ -1,8 +1,8 @@
 'use client';
 
 import { motion } from 'framer-motion';
-
-import styles from '../styles';
+import Link from 'next/link';
+import styles from '../styles/index';
 import { slideIn, staggerContainer, textVariant } from '../utils/motion';
 
 const Hero = () => (
@@ -26,6 +26,19 @@ const Hero = () => (
           <div className={styles.heroDText} />
           <h1 className={styles.heroHeading}>ker</h1>
         </motion.div>
+        <div className='flex gap-4'>
+          <Link href="/waitlist">
+            <div className=" p-4 text-xl font-bold mb-[100px] rounded-2xl bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
+              Try Beta Access
+            </div>
+          </Link>
+
+          <Link href="/newsletter">
+            <div className=" p-4 text-xl font-bold mb-[100px] rounded-2xl bg-gradient-to-r from-[#00ff1e] via-purple-500 to-purple-800">
+              Subscribe to Newsletter
+            </div>
+          </Link>
+        </div>
       </div>
 
       <motion.div
@@ -35,7 +48,7 @@ const Hero = () => (
         <div className="absolute w-full h-[300px] hero-gradient rounded-tl-[140px] z-[0] -top-[30px]" />
 
         <img
-          src="/cover.png"
+          src="/Cover.jpeg"
           alt="hero_cover"
           className="w-full sm:h-[500px] h-[350px] object-cover rounded-tl-[140px] z-10 relative"
         />
@@ -43,7 +56,7 @@ const Hero = () => (
         <a href="#explore">
           <div className="w-full flex justify-end sm:-mt-[70px] -mt-[50px] pr-[40px] relative z-10">
             <img
-              src="/stamp.png"
+              src="/Stamps-.png"
               alt="stamp"
               className="sm:w-[155px] w-[100px] sm:h-[155px] h-[100px] object-contain"
             />
