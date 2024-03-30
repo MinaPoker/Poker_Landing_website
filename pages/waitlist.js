@@ -16,14 +16,13 @@ const Whitelist = () => (
       className={`${styles.xPaddings} py-8 relative`}
     >
       <div className="absolute w-[50%] inset-0 gradient-03 text-center justify-center" />
-        <h2 className="font-extrabold text-[24px] leading-[30.24px] text-center justify-center text-white ">
-          White-Listing
+        <h2 className="font-extrabold text-[54px] leading-[30.24px] text-center justify-center text-white p-4 px-3 ">
+          Join us for the beta access
         </h2>
-
     <WhiteList/>
 
-    </motion.nav>
-  </div>
+    </motion.nav >
+  </div >
 );
 
 export default Whitelist;
